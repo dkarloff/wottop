@@ -1,0 +1,1 @@
+<div class="forum_navigation" style="margin-top:10px; margin-bottom:10px;">[page-link]{pages_count} страниц[/page-link] {pages} [next-link]Далее[/next-link]</div>

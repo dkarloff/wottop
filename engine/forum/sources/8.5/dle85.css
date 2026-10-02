@@ -1,0 +1,182 @@
+/* ==================== Диалоговые и всплывающие окна jQuery UI */
+.ui-helper-clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.ui-helper-clearfix {
+	display: inline-block;
+}
+* html .ui-helper-clearfix {
+	height: 1%;
+}
+.ui-helper-clearfix {
+	display: block;
+}
+.ui-icon {
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+.ui-widget {
+	font-family: Tahoma, Lucida Sans, Arial, sans-serif;
+	font-size: 11px;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: tahoma, Arial, sans-serif;
+	font-size: 11px;
+}
+.ui-widget-content {
+	background: #fcfdfd 50% bottom repeat-x;
+	border: 1px solid #a6c9e2;
+	color: #222222;
+}
+.ui-widget-content a {
+	color: #222222;
+}
+.ui-widget-header {
+	background: #5c9ccc url(../images/ui-bg_gloss-wave.png) 50% 50% repeat-x;
+	border: 1px solid #4297d7;
+	color: #ffffff;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #ffffff;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+	background: #dfeffc url(../images/ui-bg_glass_85.png) 50% 50% repeat-x;
+	border: 1px solid #c5dbec;
+	color: #2e6e9e;
+	font-weight: bold;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #2e6e9e;
+	text-decoration: none;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+	background: #d0e5f5 url(../images/ui-bg_glass_75.png) 50% 50% repeat-x;
+	border: 1px solid #79b7e7;
+	color: #1d5987;
+	font-weight: bold;
+}
+.ui-state-hover a, .ui-state-hover a:hover {
+	color: #1d5987;
+	text-decoration: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+	background: #f5f8f9 50% 50% repeat-x;
+	border: 1px solid #79b7e7;
+	color: #e17009;
+	font-weight: bold;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #e17009;
+	text-decoration: none;
+}
+.ui-widget :active {
+	outline: none;
+}
+.ui-state-error {
+	background: #fef1ec 50% 50% repeat-x;
+	border: 1px solid #cd0a0a;
+	color: #cd0a0a;
+}
+.ui-widget-header .ui-icon {
+	background-image: url(../images/ui-icons.png);
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+	background-image: url(../images/ui-icons_h.png);
+}
+.ui-icon-close {
+	background-position: -80px -128px;
+}
+.ui-icon-closethick {
+	background-position: -96px -128px;
+}
+.ui-button .ui-button-text {
+	display: block;
+	line-height: 1.4;
+}
+.ui-button-text-only .ui-button-text {
+	padding: .4em .8em;
+}
+input.ui-button {
+	padding: .4em 1em;
+}
+.ui-button-set {
+	margin-right: 7px;
+}
+.ui-button-set .ui-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.ui-dialog {
+	overflow: hidden;
+	padding: .2em;
+	position: absolute;
+	width: 300px;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .5em 1em .3em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 16px .2em 0;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	height: 18px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 19px;
+}
+.ui-dialog .ui-dialog-titlebar-close span {
+	display: block;
+	margin: 1px;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+	padding: 0;
+}
+.ui-dialog .ui-dialog-content {
+	background: none;
+	border: 0;
+	overflow: hidden;
+	padding: .5em 1em;
+	position: relative;
+	zoom: 1;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	background-image: none;
+	border-width: 1px 0 0 0;
+	margin: .5em 0 0 0;
+	padding: .3em 1em .5em .4em;
+	text-align: left;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	cursor: pointer;
+	float: right;
+	line-height: 1.4em;
+	margin: .5em .4em .5em 0;
+	overflow: visible;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+}
+.ui-dialog .ui-resizable-se {
+	bottom: 3px;
+	height: 14px;
+	right: 3px;
+	width: 14px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}

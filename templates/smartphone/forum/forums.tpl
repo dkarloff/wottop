@@ -1,0 +1,1 @@
+<div class="razdels">{name}<span> ( Тем {topics} /  Ответов {post} )</span>{forums}</div>

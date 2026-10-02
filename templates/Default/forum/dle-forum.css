@@ -1,0 +1,572 @@
+/*
+=============================================================
+This Skin for DLE Forum Developed by ATHF - FCLokomotiv.com
+
+File 'dle-forum.css' - Cascading Style Sheet (CSS) Document
+=============================================================
+*/
+
+/* --------------------------------------------------
+
+Глобальный класс для DLE-Forum'a
+
+-------------------------------------------------- */
+
+.dle_forum {
+	background-color: transparent;
+	font-family: verdana;
+	font-size: 11px;
+	color: #222;
+}
+
+/* --------------------------------------------------
+
+Гиперссылки
+
+-------------------------------------------------- */
+
+.dle_forum a:link, .dle_forum a:active, .dle_forum a:visited {
+	color: #222;
+	text-decoration: underline;
+}
+
+.dle_forum a:hover {
+	color: #34498B;
+}
+
+/* --------------------------------------------------
+
+Класс для описаний топиков
+
+-------------------------------------------------- */
+
+.forumdesc, .forumdesc a:link, .forumdesc a:visited, .forumdesc a:active {
+	background: transparent;
+	font-size: 10px;
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* --------------------------------------------------
+
+Класс для завершающей строки глобальных таблиц DLE-Forum'a
+
+-------------------------------------------------- */
+
+.catend {
+	background-color: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+/* --------------------------------------------------
+
+Класс для последнего сообщения ...
+
+-------------------------------------------------- */
+
+.lastaction {
+	font-size: 10px;
+	color: #434951;
+}
+
+/* --------------------------------------------------
+
+Класс, используемый в таблице статистики DLE-Forum'a
+
+-------------------------------------------------- */
+
+.activeusers {
+	background-color: #fff;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+/* --------------------------------------------------
+
+Фон для постов на форуме
+
+-------------------------------------------------- */
+
+.post2, .bg3 {
+	background-color: #EEF2F7;
+}
+
+/* --------------------------------------------------
+
+Классы для постов форума и контентсодержащей таблицы
+
+-------------------------------------------------- */
+
+td.formbuttonrow, .borderwrap p.formbuttonrow, .borderwrap p.formbuttonrow1 {
+	background-color: #D1DCEB !important;
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow {
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.postdetails {
+	font-size: 10px;
+	line-height: 140%;
+}
+
+.postcolor {
+	font-size: 12px;
+	line-height: 160%;
+}
+
+/* --------------------------------------------------
+
+Классы для межстраничной навигации форума
+
+-------------------------------------------------- */
+
+.forum_navigation {
+	color: #222222;
+	border: 0px;
+}
+
+.forum_navigation a:link, .forum_navigation a:visited, .forum_navigation a:active {
+	text-decoration: none;
+	color: #222222;
+	padding: 2px 2px 2px 2px;
+	background-color: #F9F9F9;
+	border: 1px solid #072a66;
+	font-size: 11px;
+}
+
+.forum_navigation a:hover {
+	border: 1px solid #072a66;
+	background-color: #F9F9F9;
+	color: #34498b;
+	padding: 2px 2px 2px 2px;
+}
+
+.forum_navigation span {
+	text-decoration: none;
+	background-color: #ffc9a5;
+	padding: 2px 2px 2px 2px;
+	border: 1px solid #072a66;
+	color: #222222;
+	font-size: 11px;
+}
+
+/* --------------------------------------------------
+
+Классы для таблиц ipbtable
+
+-------------------------------------------------- */
+
+.ipbtable {
+	width: 100%;
+}
+
+table.ipbtable, tr.ipbtable, td.ipbtable {
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td, .divpad {
+	padding: 5px;
+}
+
+/*
+
+td.nopad {
+	padding: 0;
+}*/
+
+/* --------------------------------------------------
+
+Классы для строк (столбцов) форума
+
+-------------------------------------------------- */
+
+.row {
+	background-color: #BBC8DC;
+	font-size:10px;
+}
+
+.row1 {
+	background-color: #DFE6EF;
+}
+
+.row2 {
+	background-color: #E4EAF2;
+}
+
+.formsubtitle {
+	background-color: #D1DCEB;
+	border: 1px solid #8394B2;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+/* --------------------------------------------------
+
+Классы для заголовков форума
+
+-------------------------------------------------- */
+
+.maintitle {
+	background-image: url('../forum/images/dlet_tile_cat.gif');
+	border: 1px solid #fff;
+	border-bottom: 1px solid #5176B5;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.maintitle a:link, .maintitle a:visited {
+	background: transparent;
+	color: #fff;
+	text-decoration: none;
+}
+
+.maintitle a:hover, .maintitle a:active {
+	background: transparent;
+	color: #F1F1F1;
+}
+
+/* --------------------------------------------------
+
+Классы для заголовков опросов в темах
+
+-------------------------------------------------- */
+
+.polltitle {
+/*	background-image: url('../forum/images/dlet_tile_cat.gif');*/
+	border: 1px solid #fff;
+	border-bottom: 1px solid #5176B5;
+	color: #222;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px;
+	background-color: #D1DCEB;
+}
+
+/* --------------------------------------------------
+
+Классы для субзаголовков форума и контентсодержащей части
+
+-------------------------------------------------- */
+
+.borderwrap table th {
+	background-image: url('../forum/images/dlet_sub.gif');
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap {
+	background-color: #FFF;
+	border: 1px solid #072A66;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* --------------------------------------------------
+
+Классы для выпадающего меню (кнопки)
+
+-------------------------------------------------- */
+
+.popmenubutton {
+	width: 120px;
+	white-space: nowrap;
+	background-color: #C2CFDF;
+	border: 1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight: bold;
+	float: right;
+	height: 15px;
+	text-align: center;
+	margin: 0px;
+	font-size: 10px;
+	padding: 2px;
+}
+
+.popmenubutton a:link, .popmenubutton a:visited {
+	color: #3A4F6C;
+	text-decoration: none;
+}
+
+.popmenubutton a:hover {
+	color: #5176B5;
+	text-decoration: none;
+}
+
+/* --------------------------------------------------
+
+Кдасс для кнопки отправных форм типа SUBMIT
+
+-------------------------------------------------- */
+
+.button {
+	background-color: #DFE6EF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana;
+	font-size: 11px;
+	padding: 1px;
+}
+
+/* --------------------------------------------------
+
+Класс для полей отправных форм типа TEXTAREA
+
+-------------------------------------------------- */
+
+.forum_textarea {
+	background-color: #fff;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana;
+	font-size: 11px;
+	margin: 0px;
+	padding: 1px;
+	vertical-align: middle;
+	width: 458px;
+	height: 156px;
+}
+
+/* --------------------------------------------------
+
+Класс для полей отправных форм типа INPUT
+
+-------------------------------------------------- */
+
+.forum_input {
+	background-color: #fff;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana;
+	font-size: 11px;
+	margin: 0px;
+	padding: 1px;
+	vertical-align: middle;
+	width: 300px;
+	height: 16px;
+}
+
+/* --------------------------------------------------
+
+Класс, отвечающий за рейтинги пользователей форума 	(добавлено для DLE F 2.1)
+
+-------------------------------------------------- */
+
+.rank {
+	width: 85px;
+	height: 16px;
+}
+
+.unit-rank {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 85px;
+	height: 16px;
+	position: relative;
+	background-image: url('../forum/images/rating.gif');
+	background-position: top left;
+	background-repeat: repeat-x;
+
+}
+
+.unit-rank li {
+	text-indent: -90000px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+.unit-rank li a {
+	display: block;
+	width: 17px;
+	height: 16px;
+	text-decoration: none;
+	text-indent: -9000px;
+	z-index: 17;
+	position: absolute;
+	padding: 0px;
+}
+
+.unit-rank li a:hover {
+	background-image: url('../forum/images/rating.gif');
+	background-position: left center;
+	z-index: 2;
+	left: 0px;
+}
+
+.unit-rank a.r1-unit { left: 0px; }
+
+.unit-rank a.r1-unit:hover { width: 17px; }
+
+.unit-rank a.r2-unit { left: 17px; }
+
+.unit-rank a.r2-unit:hover { width: 34px; }
+
+.unit-rank a.r3-unit { left: 34px; }
+
+.unit-rank a.r3-unit:hover { width: 51px; }
+
+.unit-rank a.r4-unit { left: 51px; }
+
+.unit-rank a.r4-unit:hover { width: 68px; }
+
+.unit-rank a.r5-unit { left: 68px; }
+
+.unit-rank a.r5-unit:hover { width: 85px; }
+
+.unit-rank li.current-rank {
+	background-image: url('../forum/images/rating.gif');
+	background-position: left bottom;
+	position: absolute;
+	height: 16px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+
+}
+
+/* --------------------------------------------------
+
+Классы, отвечающие за цитаты 						(добавлено для DLE F 2.1)
+
+-------------------------------------------------- */
+
+.title_quote {
+	background: #E4EAF2 url(../forum/images/q.JPG) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 2px auto 0 auto;
+	padding: 3px;
+}
+
+.quote {
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 0 auto;
+}
+
+/* --------------------------------------------------
+
+Класс, отвечающий за тэг CODE 						(добавлено для DLE F 2.1)
+
+-------------------------------------------------- */
+
+.scriptcode {
+	background: #FDDBCC url(../forum/images/k.JPG) no-repeat right;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, "Courier New", Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+}
+
+/* --------------------------------------------------
+
+Отправные формы - закомментировано. Берем класс из движка ДЛЕ
+
+-------------------------------------------------- */
+
+/*
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+*/
+.hidden_post {
+	color: #757575;	
+	font-size: 11px;
+	background-color: #F1C8D2; 
+	border: 1px dotted #bebebe;
+	text-align: left;
+	padding: 5px;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+	background: transparent;
+}
+
+.copyright {
+	font-family: Verdana;
+	font-size: 10px;
+	text-align: center;
+	background-color: #eeeeee; 
+	padding: 8px;
+	color: #222222;
+}
+.copyright a {
+	color: #222222;
+	text-decoration : none; 
+}
+
+/* --------------------------------------------------
+
+Поиск (всплывающий)                                                   (добавлено для DLE F 2.3)
+
+-------------------------------------------------- */
+
+.popupmenu,
+.popupmenu-new
+{
+   background: #f4f4f4;
+   border: 1px solid #989898;
+   text-align:left;
+   font-size:11px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+.popupmenu-new
+{
+	padding:5px;
+	background-color: #f4f4f4;
+}

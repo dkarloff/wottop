@@ -1,0 +1,85 @@
+/* Template created by ANDREJkE.ru | URL: http://dlekey.cn */
+
+*    { margin:0; padding:0; border:0; }
+
+ul    { list-style:none; }
+a    { color:#366ae0; text-decoration:underline; }
+a:hover    { color:#084dea; text-decoration:underline; }
+
+input, textarea, select, button { font: 11px/15px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:2px; }
+input, textarea, select, button { outline: none; }
+
+body {
+  color:#2a2929;
+  text-align:left;
+  background:#f2f2f2;
+  font:normal 11px/14px Tahoma, Verdana, Arial;
+}
+
+h1  { color:#121212; font:normal 18px/24px Arial, Verdana, Tahoma; }
+h2  { color:#121212; font:bold 12px/17px Arial, Verdana, Tahoma; }
+
+.heads {
+  background:#343434;
+  padding:10px;
+  font:bold 16px/18px Tahoma, Arial, Verdana;
+  color:#eee;
+}
+.logins {
+  padding:3px;
+  background:#d7d7d7;
+  border-bottom:2px solid #b0b0b0;
+}
+.logins .enter {
+  border:1px solid #343434;
+  background:#dcdcdc;
+  color:#343434;
+  font-size:11px;
+}
+.contents {
+  padding:10px 20px;
+}
+.contents .speedbars {
+  color:#878787;
+  padding-bottom:10px;
+}
+.contents .speedbars a,
+.contents .speedbars a:hover {  
+  color:#878787;
+  text-decoration:none;
+}
+.contents h1 {
+  font:normal 20px/30px Tahoma;
+
+}
+.contents .razdels {
+  padding-left:25px;
+  font:normal 14px/20px Tahoma;
+}
+.contents .razdels span {
+  color:#878787;
+  font:normal 10px/20px Tahoma;
+}
+.contents .outs {
+    padding:6px 0;
+}
+.contents .posts {
+    margin:6px 0;
+    padding:5px;
+    font-size:12px;
+    border:2px solid #dcdcdc;
+}
+.footers {
+  padding:3px;
+  background:#d7d7d7;
+  border-top:2px solid #b0b0b0;
+}
+.forum_textareas {
+  width:100%;
+  height:100px; 
+}
+.buttons {
+    font-size:12px;
+    padding:2px 3px;
+    border:1px solid #dcdcdc;
+}

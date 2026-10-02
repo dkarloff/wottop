@@ -1,0 +1,17 @@
+/* icemegamenu.css  */
+div.icemegamenu ul#icemegamenu li span.icemega_desc{display:none;}
+div.icemegamenu ul#icemegamenu li:hover span.icemega_desc,div.icemegamenu ul#icemegamenu li.current span.icemega_desc,div.icemegamenu ul#icemegamenu li:hover span.icemega_desc:after,div.icemegamenu ul#icemegamenu li.current span.icemega_desc:after,div.icemegamenu ul#icemegamenu li.active span.icemega_desc,div.icemegamenu ul#icemegamenu li.active span.icemega_desc:after,div.icemegamenu ul#icemegamenu li li span.icemega_desc,div#subMenusContainer span.icemega_desc{display:block;}
+/* forms.css*/
+button,input.button,a.button{padding:2px 5px 0;}
+/* modules.css  */
+#promo .moduletable h3.mod-title,#bottom .moduletable h3.mod-title,#footer .moduletable,.col-module,.col-module-style1,.col-module-style2{zoom:1px;}
+#promo .moduletable h3.mod-title,#bottom .moduletable h3.mod-title{margin-bottom:0;}
+/* layout.css  */
+#content_inside,.productfull .cart_wrapper{position:static;}
+hr{background:none;color:#ccc;height:1px;margin-bottom:25px;}
+/* joomla.css  */
+form#login-form p#form-login-remember label{width:95px;}
+/* modules.css  */
+.col-module .col-module-header .col-module-header-arrow{bottom:-6px;}
+/* icetabs   color fixes on trasparency for IE7  */
+.icesubMenu .icemega_cover_module .icemega_modulewrap{color:#fff;}
