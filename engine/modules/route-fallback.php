@@ -25,6 +25,8 @@ foreach ($routeRules as $pattern => $parameters) {
     if (!preg_match($pattern, $routePath, $matches)) { continue; }
     foreach ($parameters as $key => $value) {
         $_GET[$key] = is_int($value) ? rawurldecode($matches[$value]) : $value;
+        // DLE reads do/subaction from REQUEST but article IDs from GET.
+        if (!array_key_exists($key, $_POST)) { $_REQUEST[$key] = $_GET[$key]; }
     }
     break;
 }
