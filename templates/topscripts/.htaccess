@@ -5,3 +5,8 @@ Deny from all
    Order deny,allow
    Allow from all
 </FilesMatch>
+
+<Files "modern.js">
+   Order deny,allow
+   Allow from all
+</Files>

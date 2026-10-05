@@ -740,8 +740,10 @@ function clear_cache($cache_areas = false) {
 	}
 		
 	$fdir = opendir( ENGINE_DIR . '/cache' );
+
+	if ( $fdir === false ) return false;
 		
-	while ( $file = readdir( $fdir ) ) {
+	while ( false !== ($file = readdir( $fdir )) ) {
 		if( $file != '.htaccess' AND !is_dir(ENGINE_DIR . '/cache/' . $file) ) {
 			
 			if( $cache_areas ) {
@@ -755,6 +757,8 @@ function clear_cache($cache_areas = false) {
 			}
 		}
 	}
+
+	closedir( $fdir );
 	
 	return true;
 

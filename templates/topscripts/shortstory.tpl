@@ -1,15 +1,4 @@
-<div class="post">  
-    <h3 class="comen"><h1>[full-link]{title} [/full-link]</h1><span style="float:right;margin-top:5px;">{favorites}</span> </h3>                    
-   <div class="postmetadata">
-    <span class="date">[edit][X][/edit] | Просмотров: {views}</span> 
-    <span class="date" >Автор:  {author} </span> 
-    <span class="date" >Категория:  {link-category} </span>
-    <span class="rate" >{rating}</span> 
-  </div>  
-  {short-story}
-			<div class="clr"></div>
-			[edit-date]<p class="editdate"><br /><i>Новость отредактировал: <b>{editor}</b> - {edit-date}
-			<br />[edit-reason]Причина: {edit-reason}[/edit-reason]</i></p>[/edit-date]          
-  <div class="clear"></div>
-  <p class="readmore" align="right">[full-link]Подробнее[/full-link]</p>
-</div>
+<article class="story-card">
+<a class="story-cover" href="{full-link}" tabindex="-1" aria-hidden="true"><img src="{image-1}" alt="" loading="lazy"><span class="cover-grid"></span><span class="cover-label">WORLD OF TANKS</span><span class="cover-arrow">+</span></a>
+<div class="story-body"><div class="story-category">{link-category}</div><h2><a href="{full-link}">{title}</a></h2><p class="story-excerpt">{short-story limit="150"}</p><div class="story-footer"><time>{date=d.m.Y}</time><span>◉ {views}</span><a href="{full-link}" aria-label="Читать: {title}">Читать →</a></div></div>
+</article>

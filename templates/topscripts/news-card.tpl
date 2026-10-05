@@ -1,0 +1,1 @@
+<article class="news-card"><a class="news-cover" href="{full-link}" tabindex="-1" aria-hidden="true"><img src="{image-1}" alt="" loading="lazy"><span>НОВОСТИ</span></a><div class="news-card-body"><time>{date=d.m.Y}</time><h3><a href="{full-link}">{title}</a></h3><p>{short-story limit="135"}</p><a class="news-read" href="{full-link}">Читать новость →</a></div></article>

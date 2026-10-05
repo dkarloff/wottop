@@ -1,6 +1,6 @@
 <article class="article-page">
 <div class="story-category">{link-category}</div><h1>{title}</h1><div class="article-meta"><span>{date=d.m.Y}</span><span>Автор: {author}</span><span>Просмотров: {views}</span>[edit]<span>Редактировать</span>[/edit]<span>{favorites}</span></div>
-<div class="archive-notice">Архивный материал. Перед установкой проверь совместимость с версией игры.</div>
+
 <div class="article-text">{short-story}{full-story}</div>
 [edit-date]<p class="article-meta">Обновлено: {edit-date} [edit-reason]— {edit-reason}[/edit-reason]</p>[/edit-date]
 {poll}

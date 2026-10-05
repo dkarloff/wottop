@@ -1,0 +1,1 @@
+<article class="promo-card"><div class="promo-card-head"><span>МИР ТАНКОВ · LESTA</span><time>{date=d.m.Y}</time></div><h2>{title}</h2>{short-story}<div class="promo-more">[full-link]Подробнее об условиях →[/full-link]</div></article>

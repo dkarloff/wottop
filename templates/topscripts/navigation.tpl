@@ -1,10 +1,1 @@
-<br /><div class="dpad basenavi">
-	<div class="bnnavi">                                                                                                                                                                                                                                           
-		<div class="navigation">{pages}</div>
-		<div class="nextprev">
-			[prev-link]<span class="thide pprev">Назад</span>[/prev-link]
-			[next-link]<span class="thide pnext">Вперед</span>[/next-link]
-		</div>
-	</div>
-	<a class="thide toptop" onclick="scroll(0,0); return false" href="#">Наверх</a>
-</div>
+<nav class="pagination" aria-label="Страницы материалов"><div>[prev-link]← Назад[/prev-link]</div><div class="page-numbers">{pages}</div><div>[next-link]Далее →[/next-link]</div></nav>

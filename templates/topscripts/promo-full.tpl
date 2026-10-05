@@ -1,0 +1,1 @@
+<article class="article-page promo-detail"><div class="story-category">ПРОМОКОДЫ WOT / МИР ТАНКОВ</div><h1>{title}</h1><div class="article-meta">Опубликовано: {date=d.m.Y}</div>{short-story}<div class="article-text">{full-story}</div></article>
