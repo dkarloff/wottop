@@ -22,3 +22,9 @@ uploads/*
 !uploads/.gitkeep
 cgi-bin/
 webstat/
+
+# local OSPanel project config
+.osp/
+# DB dumps (contain user data; repo is public) - transfer directly to prod
+sql/*.sql
+sql/*.sql.gz
