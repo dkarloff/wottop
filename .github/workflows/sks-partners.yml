@@ -27,10 +27,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cd '/var/www/wottop/data/www/wottop.ru'
-          git fetch origin main
-          test "$(git rev-parse origin/main)" = "$GITHUB_SHA"
           stage=$(mktemp -d /tmp/sks-partners-XXXXXXXX)
           trap 'rm -rf -- "$stage"' EXIT
-          git archive "$GITHUB_SHA" -- 'templates/topscripts/main.tpl' 'templates/smartphone/main.tpl' 'assets/sks-partners/carousel.css' 'assets/sks-partners/carousel.js' 'tools/deploy-sks.py' 'tools/sks-deploy.json' | tar -x -C "$stage"
+          git clone --no-checkout --depth=1 --filter=blob:none 'git@github.com:dkarloff/wottop.git' "$stage/repository"
+          test "$(git -C "$stage/repository" rev-parse HEAD)" = "$GITHUB_SHA"
+          git -C "$stage/repository" archive "$GITHUB_SHA" -- 'templates/topscripts/main.tpl' 'templates/smartphone/main.tpl' 'assets/sks-partners/carousel.css' 'assets/sks-partners/carousel.js' 'tools/deploy-sks.py' 'tools/sks-deploy.json' | tar -x -C "$stage"
           python3 "$stage/tools/deploy-sks.py" --source "$stage"

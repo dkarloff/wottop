@@ -10,6 +10,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+import time
 import urllib.request
 
 
@@ -114,7 +115,12 @@ def run():
                     shutil.copy2(target, copy)
                 changed.append((target, current, meta))
                 write(target, data, meta)
-            after = http('/')
+            # PHP opcache may retain the old template until its timestamp interval.
+            for attempt in range(12):
+                after = http('/')
+                if after.count(b'id="exchange-links"') == 1 and after.count(b'?widget=js') == 1:
+                    break
+                time.sleep(1)
             if after.count(b'id="exchange-links"') != 1 or after.count(b'?widget=js') != 1:
                 raise RuntimeError('Homepage widget check failed')
             for tag in [b'title', b'h1']:
