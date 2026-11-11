@@ -4,6 +4,14 @@
   const links = section?.querySelector('#exchange-links');
   if (!links || section.dataset.sksReady) return;
   if (location.pathname !== '/' || location.search) { section.remove(); return; }
+  // Place this site's block between complete content sections before revealing links.
+  const placementAnchor = document.querySelector("#materials #dle-content > article:nth-of-type(4)");
+  if (placementAnchor && !section.contains(placementAnchor)) {
+    placementAnchor.insertAdjacentElement("afterend", section);
+    section.dataset.sksPlaced = '1';
+  }
+  const heading = section.querySelector('.sks-partners__heading');
+  if (heading) heading.textContent = "Наши партнёры";
   section.dataset.sksReady = '1';
   const remote = document.createElement('script');
   remote.src = section.dataset.sksSrc;
