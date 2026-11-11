@@ -1,0 +1,36 @@
+name: Publish SKS partners safely
+on:
+  push:
+    branches: [main]
+    paths:
+      - "templates/topscripts/main.tpl"
+      - "templates/smartphone/main.tpl"
+      - "assets/sks-partners/carousel.css"
+      - "assets/sks-partners/carousel.js"
+      - "tools/deploy-sks.py"
+      - "tools/sks-deploy.json"
+      - ".github/workflows/sks-partners.yml"
+      - "tools/SKS-DEPLOY.md"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: wottop-production-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: [self-hosted, wottop-prod]
+    timeout-minutes: 8
+    steps:
+      - name: Publish reviewed widget files with conflict checks and rollback
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd '/var/www/wottop/data/www/wottop.ru'
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$GITHUB_SHA"
+          stage=$(mktemp -d /tmp/sks-partners-XXXXXXXX)
+          trap 'rm -rf -- "$stage"' EXIT
+          git archive "$GITHUB_SHA" -- 'templates/topscripts/main.tpl' 'templates/smartphone/main.tpl' 'assets/sks-partners/carousel.css' 'assets/sks-partners/carousel.js' 'tools/deploy-sks.py' 'tools/sks-deploy.json' | tar -x -C "$stage"
+          python3 "$stage/tools/deploy-sks.py" --source "$stage"

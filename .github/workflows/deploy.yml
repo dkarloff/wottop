@@ -3,6 +3,16 @@ name: Deploy
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "templates/topscripts/main.tpl"
+      - "templates/smartphone/main.tpl"
+      - "assets/sks-partners/carousel.css"
+      - "assets/sks-partners/carousel.js"
+      - "tools/deploy-sks.py"
+      - "tools/sks-deploy.json"
+      - ".github/workflows/sks-partners.yml"
+      - "tools/SKS-DEPLOY.md"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 concurrency:

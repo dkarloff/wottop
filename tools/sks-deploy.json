@@ -1,0 +1,31 @@
+{
+  "root": "/var/www/wottop/data/www/wottop.ru",
+  "state": "/home/github-runner/cms-deploy-state/sks/wottop",
+  "domain": "wottop.ru",
+  "files": [
+    {
+      "path": "templates/topscripts/main.tpl",
+      "base_hashes": [
+        "868c867c7e6c9ad706a992c0cc92a1268c1a31bd77d97322c84557e1703a4112"
+      ]
+    },
+    {
+      "path": "templates/smartphone/main.tpl",
+      "base_hashes": [
+        "8acb14dc8730b760ea6fb7768c5eca884dc6dfd06973b9caebd6cef334d21e88"
+      ]
+    },
+    {
+      "path": "assets/sks-partners/carousel.css",
+      "base_hashes": [
+        null
+      ]
+    },
+    {
+      "path": "assets/sks-partners/carousel.js",
+      "base_hashes": [
+        null
+      ]
+    }
+  ]
+}
