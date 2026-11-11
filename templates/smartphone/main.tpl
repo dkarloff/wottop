@@ -26,6 +26,16 @@
 [not-aviable=main]{speedbar}[/not-aviable]
 {info}
 {content}
+[aviable=main]
+<link rel="stylesheet" href="/assets/sks-partners/carousel.css">
+<section class="sks-partners" data-sks-partners data-sks-src="https://dkarlov.ru/sks/exchange.php?widget=js&amp;key=a70efc7376aa710604a26a913b336134" aria-labelledby="sks-partners-heading" hidden>
+    <h2 class="sks-partners__heading" id="sks-partners-heading">Партнёры</h2>
+    <div id="exchange-links"></div>
+</section>
+<script src="/assets/sks-partners/carousel.js" defer></script>
+
+[/aviable]
+
 
 
 <div id="footer">
