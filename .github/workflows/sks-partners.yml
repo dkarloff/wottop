@@ -31,5 +31,8 @@ jobs:
           trap 'rm -rf -- "$stage"' EXIT
           git clone --no-checkout --depth=1 --filter=blob:none 'git@github.com:dkarloff/wottop.git' "$stage/repository"
           test "$(git -C "$stage/repository" rev-parse HEAD)" = "$GITHUB_SHA"
-          git -C "$stage/repository" archive "$GITHUB_SHA" -- 'templates/topscripts/main.tpl' 'templates/smartphone/main.tpl' 'assets/sks-partners/carousel.css' 'assets/sks-partners/carousel.js' 'tools/deploy-sks.py' 'tools/sks-deploy.json' | tar -x -C "$stage"
+          for file in 'templates/topscripts/main.tpl' 'templates/smartphone/main.tpl' 'assets/sks-partners/carousel.css' 'assets/sks-partners/carousel.js' 'tools/deploy-sks.py' 'tools/sks-deploy.json'; do
+            mkdir -p "$stage/$(dirname "$file")"
+            git -C "$stage/repository" show "$GITHUB_SHA:$file" > "$stage/$file"
+          done
           python3 "$stage/tools/deploy-sks.py" --source "$stage"
