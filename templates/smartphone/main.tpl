@@ -26,7 +26,7 @@
 [not-aviable=main]{speedbar}[/not-aviable]
 {info}
 {content}
-[aviable=main]
+[aviable=main|showfull|cat]
 <link rel="stylesheet" href="/assets/sks-partners/carousel.css">
 <section class="sks-partners" data-sks-partners data-sks-src="https://dkarlov.ru/sks/exchange.php?widget=js&amp;key=a70efc7376aa710604a26a913b336134" aria-labelledby="sks-partners-heading" hidden>
     <h2 class="sks-partners__heading" id="sks-partners-heading">Партнёры</h2>

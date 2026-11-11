@@ -66,7 +66,7 @@
 [available=main]{include file="about-portal.tpl"}[/available]
 <footer class="site-footer"><a class="footer-brand" href="/">WOT<span class="accent">TOP</span></a><p>Независимое сообщество игроков World of Tanks.<br>Игровые названия и изображения принадлежат их правообладателям.</p><a href="/index.php?do=feedback">Связаться с нами +</a><a href="#" class="back-top">↑ Наверх</a></footer>
 
-[aviable=main]
+[aviable=main|showfull|cat]
 <link rel="stylesheet" href="/assets/sks-partners/carousel.css">
 <section class="sks-partners" data-sks-partners data-sks-src="https://dkarlov.ru/sks/exchange.php?widget=js&amp;key=a70efc7376aa710604a26a913b336134" aria-labelledby="sks-partners-heading" hidden>
     <h2 class="sks-partners__heading" id="sks-partners-heading">Партнёры</h2>
